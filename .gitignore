@@ -26,7 +26,7 @@
             max-width: 1000px;
             margin: 20px auto;
         }
-        .info, .menu, .contact {
+        .info, .menu, .contact, .specials {
             background-color: #fff2e6;
             border-radius: 10px;
             padding: 20px;
@@ -54,6 +54,17 @@
         th, td {
             padding: 10px;
             text-align: left;
+        }
+        .dish-img {
+            width: 100px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .dish-row {
+            display: flex;
+            align-items: center;
         }
         footer {
             text-align: center;
@@ -85,35 +96,51 @@
             </ul>
         </section>
 
+        <section class="specials">
+            <h2>Specials of the Week</h2>
+            <ul>
+                <li><strong>General Tso’s Chicken</strong> - £8.50</li>
+                <li><strong>Peking Duck Wrap</strong> - £9.50</li>
+                <li><strong>Seafood Chow Mein</strong> - £10.00</li>
+            </ul>
+        </section>
+
         <section class="menu">
             <h2>Menu</h2>
+
             <h3>Starters</h3>
-            <table>
-                <tr><th>Dish</th><th>Price</th></tr>
-                <tr><td>Spring Rolls (2)</td><td>£3.50</td></tr>
-                <tr><td>Crispy Won Ton</td><td>£3.50</td></tr>
-                <tr><td>Chicken Satay</td><td>£4.00</td></tr>
-                <tr><td>Prawn Crackers</td><td>£2.50</td></tr>
-            </table>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Spring Rolls">
+                <span>Spring Rolls (2) - £3.50</span>
+            </div>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Crispy Won Ton">
+                <span>Crispy Won Ton - £3.50</span>
+            </div>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Chicken Satay">
+                <span>Chicken Satay - £4.00</span>
+            </div>
 
             <h3>Main Courses</h3>
-            <table>
-                <tr><th>Dish</th><th>Price</th></tr>
-                <tr><td>Sweet & Sour Chicken</td><td>£7.50</td></tr>
-                <tr><td>Beef in Black Bean Sauce</td><td>£8.00</td></tr>
-                <tr><td>Kung Pao Chicken</td><td>£7.50</td></tr>
-                <tr><td>Mixed Vegetable Chow Mein</td><td>£6.50</td></tr>
-                <tr><td>Special Fried Rice</td><td>£6.50</td></tr>
-            </table>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Sweet & Sour Chicken">
+                <span>Sweet & Sour Chicken - £7.50</span>
+            </div>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Kung Pao Chicken">
+                <span>Kung Pao Chicken - £7.50</span>
+            </div>
 
             <h3>Side Dishes</h3>
-            <table>
-                <tr><th>Dish</th><th>Price</th></tr>
-                <tr><td>Steamed Rice</td><td>£2.00</td></tr>
-                <tr><td>Egg Fried Rice</td><td>£2.50</td></tr>
-                <tr><td>Chips</td><td>£2.50</td></tr>
-                <tr><td>Mixed Vegetables</td><td>£3.00</td></tr>
-            </table>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Steamed Rice">
+                <span>Steamed Rice - £2.00</span>
+            </div>
+            <div class="dish-row">
+                <img class="dish-img" src="https://via.placeholder.com/100x70" alt="Egg Fried Rice">
+                <span>Egg Fried Rice - £2.50</span>
+            </div>
         </section>
 
         <section class="contact">
@@ -128,3 +155,4 @@
     </footer>
 </body>
 </html>
+
